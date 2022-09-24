@@ -1,7 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Observer;
+﻿/*
+ * Observer pattern is used when there is a  single data source and multiple objects need to act 
+ * when the data changed
+ */
 
-Console.WriteLine("Hello, World!");
+using Observer;
 
 List<IObserver> observers = new List<IObserver>();
 
