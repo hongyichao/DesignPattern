@@ -8,9 +8,9 @@ namespace Mediator
 {
     public abstract class UIControl
     {
-        private List<IEventHandler> eventHandlers = new List<IEventHandler>();
+        private List<Delegate> eventHandlers = new List<Delegate>();
 
-        public void AddEventHandler(IEventHandler eventHandler) 
+        public void AddEventHandler(Delegate eventHandler) 
         { 
             eventHandlers.Add(eventHandler);
         }
@@ -19,7 +19,7 @@ namespace Mediator
         {
             foreach (var e in eventHandlers) 
             {
-                e.handler();
+                e.DynamicInvoke();
             }
         }
     }

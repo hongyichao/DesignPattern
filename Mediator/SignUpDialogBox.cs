@@ -15,11 +15,22 @@ namespace Mediator
 
         public SignUpDialogBox()         
         {
-            userNameTextBox.AddEventHandler(this);
-            passwordTextBox.AddEventHandler(this);
-            checkBox.AddEventHandler(this);
+            userNameTextBox.AddEventHandler(EnableButton);
+            userNameTextBox.AddEventHandler(UserNameChangedEvent);
+            passwordTextBox.AddEventHandler(EnableButton);
+            passwordTextBox.AddEventHandler(PasswordChangedEvent);
+            checkBox.AddEventHandler(EnableButton);
         }
 
+        public void UserNameChangedEvent() 
+        {
+            Console.WriteLine("Username changed!");
+        }
+
+        public void PasswordChangedEvent()
+        {
+            Console.WriteLine("Password changed!");
+        }
 
         public void EnableButton()
         {

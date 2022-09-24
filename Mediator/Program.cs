@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Mediator;
-
-Console.WriteLine("Hello, World!");
+﻿using Mediator;
 
 var signupDialogBox = new SignUpDialogBox();
 
@@ -13,6 +10,12 @@ Console.WriteLine("Button: " + signupDialogBox.button.IsEnabled());
 
 signupDialogBox.checkBox.SetChecked(true);
 Console.WriteLine("Button: " + signupDialogBox.button.IsEnabled());
+
+signupDialogBox.checkBox.SetChecked(false);
+Console.WriteLine("Button: " + signupDialogBox.button.IsEnabled());
+
+signupDialogBox.passwordTextBox.SetContent("tester2");
+signupDialogBox.userNameTextBox.SetContent("tester2");
 
 //Console.WriteLine("TextBox: " + titleTextBox.getContent());
 //System.out.println("Button: " + saveButton.isEnabled());
