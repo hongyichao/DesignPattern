@@ -1,8 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using ChainOfResponsibility;
-
-Console.WriteLine("Hello, World!");
-
 
 UnsupportedFormatHandler unsupportedFormatHandler = new UnsupportedFormatHandler(null);
 

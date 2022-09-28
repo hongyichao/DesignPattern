@@ -1,7 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using State;
-
-Console.WriteLine("Hello, World!");
 
 var directionService = new DirectionService();
 

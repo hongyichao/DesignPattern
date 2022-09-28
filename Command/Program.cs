@@ -1,8 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using Command;
-using System.Runtime.ConstrainedExecution;
-
-Console.WriteLine("Hello, World!");
 
 
 var videoEditor = new VideoEditor();

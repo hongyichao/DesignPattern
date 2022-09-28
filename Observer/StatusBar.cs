@@ -19,7 +19,7 @@ namespace Observer
         public void show()
         {
             foreach (var stock in stocks)
-                Console.WriteLine(stock.ToString());
+                Console.WriteLine($"Status Bar: {stock.ToString()}");
         }
 
         public void NotifyUpdate()
